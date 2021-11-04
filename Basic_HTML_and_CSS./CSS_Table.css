@@ -1,0 +1,23 @@
+h1 {
+  font-weight: bold;
+  color: brown;
+}
+
+table {
+  border: 5px solid brown;
+}
+
+td:hover {
+  background-color: darkorange;
+  color: darkgreen;
+}
+
+tr, th {
+  background-color: darkorange;
+  color: darkgreen;
+}
+
+tr, td {
+  background-color: darkgreen;
+  color: darkorange;
+}
