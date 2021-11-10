@@ -1,5 +1,5 @@
 body {
-    background-color: #fff;
+    background-color: #242589;
 }
 
 h1 {
@@ -20,4 +20,17 @@ h1 {
     SELECT ALL SQUARES IN THE ARRAY
 --------------------------------------*/
 
-.container .square:nth-child(n)
+.container .square:nth-child(-n+4) {
+    background-image: url("../images/icons/smileyface2.png");
+    color: #fff;
+    float: left;
+    width: 100px;
+    margin:5px;
+    border: 1px solid black;
+    border-radius: 25%;
+    cursor: pointer;
+}
+
+/*--------------------------------------
+    SELECT ALL SQUARES PARAGRAPHS IN THE ARRAY
+--------------------------------------*/
