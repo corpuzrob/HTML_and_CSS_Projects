@@ -25,7 +25,7 @@ nav {
 }
 
 h1, h2, h3, h4, h5, h6 {
-    font-family: 'Papyrus', sans-serif;
+    font-family: 'Anton', sans-serif;
 }
 
 h1 {
@@ -67,7 +67,8 @@ p {
 }
 
 .heading-padding {
-    padding-bottom: 40px;
+    padding-top: 20px;
+    padding-bottom: 20px;
 }
 
 section {
@@ -183,6 +184,31 @@ section {
         padding: 5px;
     }
 
+    /*  =============================================
+    GALLERY STYLES (TEST)
+    =============================================*/  
+
+
+/* unvisited link */
+a:link {
+    color: red;
+  }
+  
+  /* visited link */
+  a:visited {
+    color: red;
+  }
+  
+  /* mouse over link */
+  a:hover {
+    color: hotpink;
+  }
+  
+  /* selected link */
+  a:active {
+    color: blue;
+  }
+
   /*  =============================================
     CONTACT STYLES
     =============================================*/  
@@ -231,7 +257,7 @@ section {
     color: #13161B;
     font-weight: 900;
     font-size: 1.5em;
-    font-variant: small-caps;
+    /*font-variant: small-caps;*/
     letter-spacing: .4pt;
     word-spacing: .3pt;
 }
@@ -285,7 +311,7 @@ section {
 
 .terms {
     margin: 30px 1px 0 0 ;
-    margin-top:13%;
+    /* margin-top:13%; */
     padding-left: 52px;
     font-size: 14px;
     line-height: 5px;
@@ -340,24 +366,3 @@ section {
 }
 
 
-/* Test of link color */
-
-/* unvisited link */
-a:link {
-    color: red;
-  }
-  
-  /* visited link */
-  a:visited {
-    color: red;
-  }
-  
-  /* mouse over link */
-  a:hover {
-    color: hotpink;
-  }
-  
-  /* selected link */
-  a:active {
-    color: blue;
-  }
