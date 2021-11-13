@@ -34,13 +34,24 @@ h1 {
     font-size: 30px;
     text-transform: uppercase;
     text-align: center;
-    color: #E91C1C;
-    text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.5);
+    color:#f66060;
+    text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.15);
 }
 
 h2 {
     line-height: 50px;
-    color: #E91C1C;
+    color: #f66060
+    ;
+}
+
+.gallery-sub-head {
+    width: 60%;
+    /* padding: 10px; */
+    border-radius: 8px;
+    margin: 0px auto;
+    padding-bottom: 60px;
+    box-shadow: -1px -1px -1px 0 rgba(0, 0, 0, 0.1), 1px 2px 10px 0 rgba(0, 0, 0, 0.5);
+    text-align: left;
 }
 
 h3 {
@@ -58,7 +69,7 @@ h4 {
 
 p {
     font-weight: 300;
-    line-height: 30px;
+    line-height: 15px;
     padding-bottom: 15px;
 }
 
@@ -149,8 +160,8 @@ section {
         width: 100%;
         display: block;
         height: auto;
-        padding-top: 350px; /* This is a spacer before the main title logo */
-        padding-bottom: 500px; /* This is a spacer after the main title logo */
+        padding-top: 1015px; /* This is a spacer before the main title logo */
+        padding-bottom: 700px; /* This is a spacer after the main title logo */
         color: #fff;
     }
 
@@ -184,29 +195,33 @@ section {
         padding: 5px;
     }
 
-    /*  =============================================
+/*  =============================================
     GALLERY STYLES (TEST)
     =============================================*/  
 
 
 /* unvisited link */
 a:link {
-    color: red;
+    color: rgba(246,96,96,255)
+    ;
   }
   
   /* visited link */
   a:visited {
-    color: red;
+    color: rgba(246,96,96,255)
+    ;
   }
   
   /* mouse over link */
   a:hover {
-    color: hotpink;
+    color: #5cc3ff
+    ;
   }
   
   /* selected link */
   a:active {
-    color: blue;
+    color: #07589e
+    ;
   }
 
   /*  =============================================
@@ -220,7 +235,8 @@ a:link {
         padding: 10px;
         border-radius: 8px;
         margin: 0px auto;
-        background-color: rgba(100, 65, 0, .3);
+        background-color: rgba(15,46,84,255)
+        ;
         box-shadow: 2px 2px 10px 0 rgba(0, 0, 0, 0.5);
     
     }
@@ -234,7 +250,7 @@ a:link {
     padding: 10px;
     border-radius: 8px;
     margin: 0px auto;
-    background-color: rgba(100, 65, 0, .3);
+    background-color: rgba(15,46,84,255)    ;
     box-shadow: -1px -1px -1px 0 rgba(0, 0, 0, 0.1), 1px 2px 10px 0 rgba(0, 0, 0, 0.5);
 
 }
@@ -243,7 +259,7 @@ a:link {
     width: 70%;
     text-align: center;
     margin: 0 auto;
-    color: #13161B;
+    color: white;
     font-weight: 500;
     font-size: 1.3em;
     letter-spacing: 0pt;
@@ -254,7 +270,7 @@ a:link {
     width: 70%;
     text-align: center;
     margin: 0 auto;
-    color: #13161B;
+    color: white;
     font-weight: 900;
     font-size: 1.5em;
     /*font-variant: small-caps;*/
@@ -263,22 +279,26 @@ a:link {
 }
 
 .donate p {
-    color: #13161B;
+    color: white;
     width: 50%;
     margin: 0 auto;
+    text-align: center;
 }
 
 .donate form {
     font-size: 15px;
     outline: none;
     font-weight: 600;
-    color: #8D8E8F;
+    /* color: #8D8E8F; */
+    color: #0f2e54;
     padding: 12px 12px;
     width: 70%;
     border: 1px solid #808080;
     margin: 2% auto;
     border-radius: 7px;
     background: rgb(227,222,222);
+    /*background: rgba(246,96,96,255);*/
+
     box-shadow: 2px 3px 3px 0px rgba(0, 0, 0, 0.3);
     font-family: 'Raleway', sans-serif;
 }
@@ -290,19 +310,20 @@ a:link {
     color: #8D8E8F;
     padding: 2% 1% 2% 7%;
     width: 80%;
-    border-top: 1px solid #090B0D;
+    border-top: 1px solid #0f2e54;
     border-right: 2px solid #424549;
     border-bottom: 2px solid #424549;
-    border-left: 1px solid #090B0D;
+    border-left: 1px solid #0f2e54;
     margin: 10px 1em;
     border-radius: 7px;
-    background: #13161B;
+    background: #0f2e54;
     box-shadow: inset 0px 3px 0px 0px rgba(5, 5, 5, 0.15);
     font-family: 'Raleway', sans-serif;
 }
 
 .donate input[type="text"]:hover {
-    box-shadow: 0 0 18px rgba(100, 65, 0, .8);
+    color: #f66060;
+    box-shadow: 0 0 18px rgba(92, 195, 255, 255);
 }
 
 .form-spacer {
@@ -325,7 +346,7 @@ a:link {
 }
 
 .terms:hover {
-    color: orange;
+    color: rgba(246,96,96,255);
     text-decoration: underline;
 }
 
@@ -349,8 +370,8 @@ a:link {
 
 .submit input[type="submit"]:hover {
     color: #000;
-    background-color: #8D8E8F;
-    box-shadow: inset 1px 2px 15px 0 rgba(0,0,0,0.5);
+    background-color: #f66060;
+    box-shadow: inset 1px 2px 15px 0 rgba(246,96,96,255);
 }
 
 /*  =============================================
@@ -358,8 +379,13 @@ a:link {
     =============================================*/
 
 #footer {
+    background-color: rgba(15,46,84,255);
+
+    /* This is the previous tan color: 
     background-color: rgba(100,65,0,.3);
-    color: #000;
+    */
+
+    color: #f66060;
     text-shadow: 2px 2px 8px 0 (0,0,0,0.4);
     padding: 20px 50px 20px 50px;
     text-align: right;
