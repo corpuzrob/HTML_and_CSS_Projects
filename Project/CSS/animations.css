@@ -77,8 +77,10 @@
 }
 
 .white-head {
-    color: #C9BDAA;
-    margin-tops: 5%;
+  /*  color: #C9BDAA;*/
+    color: #f66060;
+
+    margin-top: 5%;
 }
 
 /*  =============================================
@@ -101,6 +103,6 @@
     transform-origin: 50% 50%;
 }
 
-.photo: hover img {
+.photo hover img {
     transform: scale(1.1);
 }
