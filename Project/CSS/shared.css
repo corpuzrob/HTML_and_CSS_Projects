@@ -368,7 +368,7 @@ a:link {
     box-shadow: 1px 1px 4px 0 rgba(0,0,0,0.3);
 }
 
-.donate input[type="submit"]:hover {
+.submit input[type="submit"]:hover {
     color: #f66060    ;
     background-color: rgba(92,195,255,255);
     /* box-shadow: inset 1px 2px 15px 0 rgba(246,96,96,255); */

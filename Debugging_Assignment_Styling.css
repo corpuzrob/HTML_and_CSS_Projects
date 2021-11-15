@@ -1,0 +1,14 @@
+/*  =============================================
+    DEBUGGING ASSIGNMENT STYLES 
+    =============================================*/  
+
+    
+    body {
+        color: darkblue;
+        background-color: lightblue;
+    }
+
+    .border { 
+        border-color: red;
+        border-style: dotted;
+    }
