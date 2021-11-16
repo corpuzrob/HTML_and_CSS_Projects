@@ -307,7 +307,7 @@ a:link {
     font-size: 15px;
     outline: none;
     font-weight: 600;
-    color: #8D8E8F;
+    color: white;
     padding: 2% 1% 2% 7%;
     width: 80%;
     border-top: 1px solid #0f2e54;
@@ -364,7 +364,7 @@ a:link {
     font-size: 18px;
     transition: border-color 0.3s color 0.3s background-color 0.3s;
     border-radius: 7px;
-    background-color: #797A7B;
+    background-color: #f66060;
     box-shadow: 1px 1px 4px 0 rgba(0,0,0,0.3);
 }
 
