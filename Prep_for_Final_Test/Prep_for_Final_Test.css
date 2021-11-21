@@ -1,3 +1,39 @@
+/* Nav bar */
+.navbar {
+    overflow: hidden;
+    background-color: rgb(136, 142, 178, 0.1);
+    position: fixed; /* Set the navbar to fixed position */
+    top: 0; /* Position the navbar at the top of the page */
+    width: 100%; /* Full width */
+  }
+  
+  /* Links inside the navbar */
+  .navbar a {
+    float: left;
+    display: block;
+    color: #000;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+  
+  /* Change background on mouse-over */
+  .navbar a:hover {
+    background: #ddd;
+    color: black;
+  }
+  
+  /* Main content
+  .main {
+    margin-top: 30px; Add a top margin to avoid content overlay
+    color: rgb(136, 142, 178, 0.1);
+  } */
+
+.container {
+    margin-top: 60px;
+}
+
+
 img {
     filter: grayscale(100%);
     width: 100%;
@@ -7,9 +43,10 @@ img {
 }
 
 .text-image {
+    /* margin-top: 0px; */
     position: relative;
     text-align: center;
-    color: white;
+    color: black;
 }
 
 .bottom-left {
@@ -49,23 +86,66 @@ img {
     margin-right: auto;
 }
 
+div {
+    column-gap: 80px;
+}
+
 .div-1 {
     text-align: center;
-    color: blue;
-    background-color: grey;
+    /* color: blue; */
+    /* background-color: grey; */
 }
 
 .div-2 {
     text-align: center;
-    color:red;
-    background-color: grey;
+    /* color:red; */
+    /* background-color: grey; */
+}
+
+/* Regular even columns */
+.row {
+    /* margin-left: 40px;
+    margin-right: 40px; */
+    margin-left: auto;
+    margin-right: auto;
+    width: 70%;
+}
+
+.column {
+    float: left;
+    width: 50%;
+    text-align: left;
+    /* padding: 2px; */
+}
+
+/* Flexbox columns */
+
+/* .row {
+    display: flex;
+}
+  
+.column {
+    flex: 50%;
+} */
+
+
+  
+  /* Clear floats after the columns */
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+
+p:hover {
+    color: grey;
 }
 
 .table {
     display: block;
     margin-left: auto;
     margin-right: auto;
-    width: 100%;
+    width: 60%;
     /* background-color: grey; */
     font-weight: 900;
     font-size: auto;

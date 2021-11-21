@@ -199,7 +199,9 @@ section {
     GALLERY STYLES (TEST)
     =============================================*/  
 
-
+.container {
+    width: 70%;
+}
 /* unvisited link */
 a:link {
     color: rgba(246,96,96,255)
