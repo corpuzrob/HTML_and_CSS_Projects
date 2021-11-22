@@ -164,12 +164,20 @@ footer {
 /***** VIDEO STYLING *****/
 
 /* Formatting for background video */
-#Typing_Video {
+#Header_Video {
     position: fixed; /* This fixes the video to the page */
     right: 0; /* This ensures there is no space between the edge of the video and the edge of the page */
     bottom: 0; /* This ensures no space between the bottom of the video and the bottom of the page */
     min-width: 100%; /* This ensures the video is displayed across the full width of the page */
     z-index: -1; /* This places the video behind the other elements on the page */
+    filter: grayscale(100%); /* Added grayscale effect */
+}
+
+/* Added video element hover effects */
+#Header_Video:hover {
+	filter: grayscale(10%);  /* Brings back most of the video's color when hovered over */
+    transition: transform 1s; /* Transition lasts 1 second */
+	transform: scale(1.1); /* Video is increased slightly when hovered over */
 }
 
 /* Screens that are 576px and smaller will not display the background video */
