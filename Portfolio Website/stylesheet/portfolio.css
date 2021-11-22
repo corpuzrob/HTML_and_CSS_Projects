@@ -5,6 +5,14 @@ body {
     margin: 0%  /* This ensures our site displays all the way to the edge of the browser screen */
 }
 
+@media screen and (min-width: 3000px) {
+    body {
+        
+        margin-left: 500px;
+        margin-right: 500px;
+    }
+}
+
 /* Heading 1 Elements */
 
 h1 {
@@ -75,11 +83,15 @@ q {
 img {
     filter: grayscale(100%); /* This rids our pictures of 100% of their color */
     /* border-radius: 8px; */ /* Gives all images slightly rounded corners */
-    max-width: 100%; /* Ensures all images stay within the width of their container */
-    height: 340px; /* Sets the height of all images */
+    /* max-width: 100%; */ /* Ensures all images stay within the width of their container */
+    /* height: 340px; */ /* Sets the height of all images.  I removed this to try to get photos to fit. */
+    height: 100%;
+    top: 0px;
+    /* position: absolute; */
     display: block; /* By specifying block display we can ensure our images are able to be centered */
     margin-left: auto; /* In combination with "margin-right: auto" this centers all images */
     margin-right: auto;
+    overflow: hidden; /* Hide photo that's outside container */
 }
 
 /* Image element hover effects */
@@ -97,7 +109,6 @@ img:hover {
         margin-top: 150px;
     }
 }
-
 
 /* Styling for footer element */
 footer {
@@ -219,10 +230,11 @@ footer {
 .Column_1 {
     float: left;
     width: 50%; /* This ensures the column takes up half of the page width */
-    padding: 10px;
+    /* padding: 10px; */
     padding-top: 3%; /* This ensures there is space between the top of the column and our headings */
-    height: 400px; /* This sets the height of the column to 400px -  this may need to be adjusted depending on the text you enter */
+    height: 500px; /* Original column height was 400px - this may need to be adjusted depending on the text you enter */
     background-color: #f2f2f2; /* Sets the background color of the columns with class Column_1 */
+    /* column-fill: auto; */
 }
 
 /* Screens 576px and smaller will display a scroll bar if the text overflows the column height */
@@ -235,9 +247,9 @@ footer {
 .Column_2 {
     float: left;
     width: 50%;
-    padding: 10px;
-    padding-top: 1.9%;
-    height: 400px;
+    /* padding: 10px; */ /* Turned off padding */
+    /* padding-top: 1.9%; */ /* Turned off top padding */
+    height: 500px; /* Original column height was 400px */
     background-color: rgba(77,77,77, 0.5);
     /* background-image: url("https://www.robcorpuz.com/More/SITE/My-SmugMug-Site-Files-Do-Not/n-Lhpdk/i-WLXfTkp/A"); */
 }
