@@ -38,7 +38,7 @@ h1:hover {
 
 /* Paragraph elements */
 p {
-    font-family: Perpetua, Rockwell Extra Bold;
+    font-family: "Rubik", Rockwell Extra Bold;
     text-align: justify; /* Justify text within paragraph elements */
     letter-spacing: 1px; /* This expands the text slightly */
     font-size: 20px;
@@ -87,7 +87,7 @@ img {
     /* height: 340px; */ /* Sets the height of all images.  I removed this to try to get photos to fit. */
     height: 100%;
     top: 0px;
-    /* position: absolute; */
+    /* position: absolute; */ /* Turned this off to keep photos contained */
     display: block; /* By specifying block display we can ensure our images are able to be centered */
     margin-left: auto; /* In combination with "margin-right: auto" this centers all images */
     margin-right: auto;
@@ -186,7 +186,7 @@ footer {
     bottom: 0; /* This ensures no space between the bottom of the video and the bottom of the page */
     min-width: 100%; /* This ensures the video is displayed across the full width of the page */
     z-index: -1; /* This places the video behind the other elements on the page */
-    /* filter: invert(100%); Added inverted effect */
+    /* filter: invert(100%); Tried inverted effect */
     filter: grayscale(100%); /* Added grayscale effect */
 }
 
@@ -235,6 +235,7 @@ footer {
     height: 500px; /* Original column height was 400px - this may need to be adjusted depending on the text you enter */
     background-color: #f2f2f2; /* Sets the background color of the columns with class Column_1 */
     /* column-fill: auto; */
+    overflow: hidden;
 }
 
 /* Screens 576px and smaller will display a scroll bar if the text overflows the column height */
@@ -251,6 +252,10 @@ footer {
     /* padding-top: 1.9%; */ /* Turned off top padding */
     height: 500px; /* Original column height was 400px */
     background-color: rgba(77,77,77, 0.5);
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     /* background-image: url("https://www.robcorpuz.com/More/SITE/My-SmugMug-Site-Files-Do-Not/n-Lhpdk/i-WLXfTkp/A"); */
 }
 
@@ -315,6 +320,6 @@ form {
     border-radius: 5px; /* Rounds the corners of the contact form */
     background-color: #f2f2f2; 
     padding: 10px; /* Adds padding to the contact form */
-    font-family: "Trebuchet MS", Optima;
+    font-family: "Monserrat", Optima;
 }
 /***** END OF CONTACT FORM STYLING *****/
