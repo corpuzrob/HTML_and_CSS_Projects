@@ -16,30 +16,12 @@ body {
 
 /* Heading 1 Elements */
 
-.Name {
-    text-transform: uppercase; /* Capitalizing all h1 headings */
-    font-family: "Poppins", "Montserrat", sans-serif; /* Sets the font family of all h1 headings */
-    font-weight: 200;
-    font-size: 54px;
-    text-align: center; /* Centering all h1 elements */
-    margin-top: 3%; /* Adds a small margin above h1 elements */
-    color: #fff; 
-    margin-bottom: -72px;
-    letter-spacing: 12px;
-}
-
-.Name:hover {
-    filter: grayscale(5%); /* Adds a slightly gray filter to the h1 headings when hovered over */
-    transform: scale(1.1); /* When the h1 elements are hovered over they increase in size by 1.1 */
-    transition: transform 1s; /* This causes the transformation to last 1 second */
-}
-
 h1 {
     text-transform: uppercase; /* Capitalizing all h1 headings */
     font-family: "Poppins", "Montserrat", sans-serif; /* Sets the font family of all h1 headings */
     font-weight: 900;
     text-align: center; /* Centering all h1 elements */
-    margin-top: 3%; /* Adds a small margin above h1 elements */
+    margin-top: 0%; /* Adds a small margin above h1 elements */
     color: #1a1a1a; 
     letter-spacing: 4px;
 }
@@ -54,6 +36,26 @@ h1:hover {
 /* Styling for portfolio title text */
 .white-text {
     color: #fff; /* This is used to change the color of the portfolio title text */
+}
+
+.Name {
+    text-transform: uppercase; /* Capitalizing all h1 headings */
+    font-family: "Poppins", "Montserrat", sans-serif; /* Sets the font family of all h1 headings */
+    font-weight: 200;
+    font-size: 54px;
+    text-align: center; /* Centering all h1 elements */
+    margin-top: 3%; /* Adds a small margin above h1 elements */
+    color: #fff; 
+    /* margin-bottom: -72px; */
+    letter-spacing: 12px;
+    margin-bottom: 0px;
+    bottom: 0;
+}
+
+.Name:hover {
+    filter: grayscale(5%); /* Adds a slightly gray filter to the h1 headings when hovered over */
+    transform: scale(1.1); /* When the h1 elements are hovered over they increase in size by 1.1 */
+    transition: transform 1s; /* This causes the transformation to last 1 second */
 }
 
 /* Paragraph elements */
@@ -137,12 +139,12 @@ img:hover {
 
 /* The @media rule is used in media queries to apply different styles for different media/types of devices */
 /* On screens 576px and smaller the images will be 100px tall and centered vertically in the column */
-@media screen and (max-width: 576px) {
+/* @media screen and (max-width: 576px) {
     img {
         height: 100px;
         margin-top: 150px;
     }
-}
+} */
 
 /* Styling for footer element */
 footer {
@@ -177,7 +179,7 @@ footer {
     padding: 14px 16px; /* This adds padding around our text */
     text-decoration: none; /* This gets rid of the underlines under the text on our navbar */
     font-family: "Poppins", "Montserrat", sans-serif; /* This specifies the font family for text on our navbar */
-    font-weight: 400
+    font-weight: 400;
     font-size: 20px; /* This specifies the font size for text on our navbar */
     text-align: center; /* This centers the text within its container */
     position: relative; /* This sets the text relative to its normal positioning, allowing us to use the animation below */
@@ -234,7 +236,7 @@ footer {
 	transform: scale(1.1); /* Video is increased slightly when hovered over */
 }
 
-/* Screens that are 576px and smaller will not display the background video */
+/* Turned this off-Screens that are 576px and smaller will not display the background video */
 @media screen and (max-width: 576px) {
     #Typing_Video {
         display: none;
@@ -274,9 +276,10 @@ footer {
     /* column-fill: auto; */
     overflow: hidden;
     background-size: cover;
+    /* display: flex; Tried this but it messed with alignment of header */
 }
 
-/* Screens 576px and smaller will display a scroll bar if the text overflows the column height */
+/* Hid this because of issue with top being hidden - Screens 576px and smaller will display a scroll bar if the text overflows the column height */
 /* @media screen and (max-width: 576px) {
     .Column_1 {
         overflow: auto;
@@ -296,7 +299,6 @@ footer {
     justify-content: center;
     align-items: center;
     background-size: cover;
-    /* background-image: url("https://www.robcorpuz.com/More/SITE/My-SmugMug-Site-Files-Do-Not/n-Lhpdk/i-WLXfTkp/A"); */
 }
 
 /* This class is applied to the columns in the final row, overriding the height and padding to provide more room for the contact form  while keeping the rest of the formatting from Column_1 or Column_2 */
@@ -305,19 +307,44 @@ footer {
     height: 450px;
 }
 
-/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
-@media screen and (max-width: 600px) {
-    .column {
-      width: 100%;
-    }
-  }
-
 /* This inserts something after the content of selected elements (in this case the elements with class "Row") */
 .Row:after {
 	content: ""; /* By leaving this blank, we are allowing the footer (covered lower down) to be displayed - removing it makes the footer overwrite a column */
 	display: table; /* The display property specifies the type of display behavior; the table value tells the browser to treat the element as a table */
 	clear: both; /* This clears any other elements from floating on the left or the right of an element */
 }
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 1200px) {
+    .Column_1, .Column_2 {
+        width: 100%;
+    }
+
+/* The following was an unsuccessful attempt to change the order of the columns in mobile view */
+    /* .column div:nth-child(1) {
+        order: 1;
+    }
+
+    .column div:nth-child(2) {
+        order: 2;
+    }
+
+    .column div:nth-child(3) {
+        order: 4;
+    }
+
+    .column div:nth-child(4) {
+        order: 3;
+    }
+
+    .column div:nth-child(5) {
+        order: 5;
+    }
+
+    .column div:nth-child(6) {
+        order: 6;
+    }
+  } */
 /***** END OF TABLE STYLING *****/
 
 /***** CONTACT FORM STYLING *****/
