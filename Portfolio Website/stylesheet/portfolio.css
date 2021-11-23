@@ -42,9 +42,9 @@ p {
     font-family: "Montserrat", sans-serif;
     text-align: justify; /* Justify text within paragraph elements */
     letter-spacing: 1px; /* This expands the text slightly */
-    font-size: 20px;
-    padding-left: 20px; /* Adds padding to the left of the paragraph element */
-    padding-right: 20px; /* Adds padding to the right of the paragraph element */
+    font-size: 18px;
+    padding-left: 60px; /* Adds padding to the left of the paragraph element */
+    padding-right: 60px; /* Adds padding to the right of the paragraph element */
 }
 
 /* Paragraph element hover effect */
@@ -53,6 +53,11 @@ p:hover {
     transition: transform 1s; /* This makes the transform effect last 1 second */
 	transform: scale(1.01); /* This makes the paragraphs increase slightly in size when hovered over */
 }
+
+/* .p2 {
+    padding-left: 40px;
+    padding-right: 40px;
+} */
 
 /* Center class - this applies to all elements with the class "center" */
 .center {
@@ -79,6 +84,12 @@ a:hover {
 q {
     font-style: italic; /* This makes the quote italicized */
     font-size: 14px;
+}
+
+.q2 {
+    font-style: italic; /* This makes the quote italicized */
+    font-size: 14px;
+    text-align: center;
 }
 
 /* Image elements */
@@ -236,7 +247,7 @@ footer {
     width: 50%; /* This ensures the column takes up half of the page width */
     /* padding: 10px; */
     padding-top: 3%; /* This ensures there is space between the top of the column and our headings */
-    height: 600px; /* Original column height was 400px - this may need to be adjusted depending on the text you enter */
+    height: 550px; /* Original column height was 400px - this may need to be adjusted depending on the text you enter */
     background-color: #f2f2f2; /* Sets the background color of the columns with class Column_1 */
     /* column-fill: auto; */
     overflow: hidden;
@@ -255,7 +266,7 @@ footer {
     width: 50%;
     /* padding: 10px; */ /* Turned off padding */
     /* padding-top: 1.9%; */ /* Turned off top padding */
-    height: 600px; /* Original column height was 400px */
+    height: 550px; /* Original column height was 400px */
     background-color: rgba(77,77,77, 0.5);
     background-color: #f2f2f2;
     overflow: hidden;
