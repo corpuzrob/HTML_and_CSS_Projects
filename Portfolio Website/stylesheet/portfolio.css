@@ -5,13 +5,14 @@ body {
     margin: 0%  /* This ensures our site displays all the way to the edge of the browser screen */
 }
 
-@media screen and (min-width: 3000px) {
+/* 
+@media screen and (min-width: 1500px) {
     body {
         
         margin-left: 500px;
         margin-right: 500px;
     }
-}
+} */
 
 /* Heading 1 Elements */
 
@@ -183,6 +184,7 @@ footer {
 /* Formatting for background video */
 #Header_Video {
     position: fixed; /* This fixes the video to the page */
+    top: 0; /* I added this to fix the grey bar problem */
     right: 0; /* This ensures there is no space between the edge of the video and the edge of the page */
     bottom: 0; /* This ensures no space between the bottom of the video and the bottom of the page */
     min-width: 100%; /* This ensures the video is displayed across the full width of the page */
