@@ -78,6 +78,7 @@ a:hover {
 /* Quotation elements */
 q {
     font-style: italic; /* This makes the quote italicized */
+    font-size: 14px;
 }
 
 /* Image elements */
@@ -256,6 +257,7 @@ footer {
     /* padding-top: 1.9%; */ /* Turned off top padding */
     height: 500px; /* Original column height was 400px */
     background-color: rgba(77,77,77, 0.5);
+    background-color: #f2f2f2;
     overflow: hidden;
     display: flex;
     justify-content: center;
