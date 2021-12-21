@@ -12,6 +12,7 @@
   </head>
   <body>
 
+    <!-- Navbar -->
     <div class="container">
 
       <nav class="navbar navbar-expand-lg navbar-light bg-info">
@@ -45,6 +46,8 @@
           </form>
         </div>
       </nav>
+      <!--/ Navbar -->
+
 
       <div class="jumbotron jumbotron-fluid bg-info text-center">
         <div class="container">
@@ -96,7 +99,7 @@
         </div>
       </div>
 
-<!-- showtimes -->
+<!-- Showtimes -->
 
       <div class="container my-3">
         <h3>Showtimes:</h3>
@@ -151,7 +154,7 @@
           </div>
         </div>
       </div>  
-
+<!-- /Showtimes -->
 
 
 <!-- I want to keep the code below for now just as a future learning reference as something I tried but didn't work.  I know that in the future this should be deleted. -->
@@ -210,7 +213,7 @@
         Movie Deals</h1>
         <p class="lead">Check out our monthly deals...</p>
         <!-- Movie Deals -->
-        <button type="button" data-toggle="modal" data-target="#myModal">See our monthly movie deals!</button>        
+        <button type="button" class="btn btn-outline-primary" data-toggle="modal" data-target="#register">See our monthly movie deals!</button>        
         <!-- Movie Deals -->
     </div>
 </div>
@@ -226,6 +229,7 @@
                 <div class="form-group">
                   <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
                 </div>
+                <!-- The following line was replaced with the subsequent line to add a popover effect: -->
                 <!-- <button type="submit" class="btn btn-primary">Submit</button> -->
                 <button type="button" class="btn btn-primary btn-info popover-dismiss" data-container="body" data-toggle="popover" data-placement="top" data-content="Share your email for some incredible movie reward deals!">
                   Submit
@@ -236,18 +240,34 @@
       </div>
 <!-- /Sign-up Form -->
 
+<!-- The following adds a modal (drop down) form -->
 <!-- Form Modal -->
-<div class="modal" tabindex="-1" role="dialog" id=>
+<div class="modal" tabindex="-1" role="dialog" id="register">
   <div class="modal-dialog" role="document">
     <div class="modal-content">
       <div class="modal-header">
-        <h5 class="modal-title">Register to receive movie deals!</h5>
+        <h5 class="modal-title">This is an offer you can't refuse!</h5>
         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
           <span aria-hidden="true">&times;</span>
         </button>
       </div>
       <div class="modal-body">
 
+        <!-- This next section adds inputs to our modal form: -->
+        <form>
+          <div class="form-group">
+            <label for="firstname">First Name:</label>
+            <input type="text" class="form-control" id="firstname" placeholder="Vito">
+          </div>
+          <div class="form-group">
+            <label for="lastname">Last Name:</label>
+            <input type="text" class="form-control" id="lastname" placeholder="Corleone">
+          </div>
+          <div class="form-group">
+            <label for="email">Email:</label>
+            <input type="text" class="form-control" id="email" placeholder="godfather342526@gmail.com">
+          </div>
+        </form>
 
       </div>
       <div class="modal-footer">
