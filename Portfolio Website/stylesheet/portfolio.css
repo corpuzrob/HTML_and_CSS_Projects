@@ -26,7 +26,7 @@ body {
 h1 {
     text-transform: uppercase; /* Capitalizing all h1 headings */
     font-family: "Poppins", "Montserrat", sans-serif; /* Sets the font family of all h1 headings */
-    font-weight: 900;
+    font-weight: 700;
     text-align: center; /* Centering all h1 elements */
     margin-top: 0%; /* Adds a small margin above h1 elements */
     color: #1a1a1a; 
@@ -38,11 +38,18 @@ h1:hover {
     filter: grayscale(5%); /* Adds a slightly gray filter to the h1 headings when hovered over */
     transform: scale(1.1); /* When the h1 elements are hovered over they increase in size by 1.1 */
     transition: transform 1s; /* This causes the transformation to last 1 second */
+    font-weight: 800;
+    /* text-shadow: 1px 13px 5px 0.5#aba8a8; */
 }
 
 /* Styling for portfolio title text */
 .white-text {
     color: #fff; /* This is used to change the color of the portfolio title text */
+}
+
+/* Styling for portfolio title text */
+.white-text:hover {
+    color: white; /* This is used to change the color of the portfolio title text */
 }
 
 .Name {
@@ -64,6 +71,8 @@ h1:hover {
     filter: grayscale(5%); /* Adds a slightly gray filter to the h1 headings when hovered over */
     transform: scale(1.1); /* When the h1 elements are hovered over they increase in size by 1.1 */
     transition: transform 1s; /* This causes the transformation to last 1 second */
+    font-weight: 500;
+    color: white;
 }
 
 /* Paragraph elements */
@@ -102,12 +111,13 @@ p:hover {
 
 /* Anchor elements */
 a {
-    color: gray; /* This ensures all links are blue */
+    color: gray; /* This ensures all links are grey */
+    text-decoration: underline;
 }
 
 /* Anchor elements */
 a:hover {
-    color: #888eb2; /* This ensures all links are blue */
+    color: #888eb2; /* This ensures all links are blue on hover */
 }
 
 /* Quotation elements */
@@ -124,7 +134,7 @@ q {
 
 /* Image elements */
 img {
-    filter: grayscale(100%); /* This rids our pictures of 100% of their color */
+    filter: grayscale(100%) contrast(110%); /* This rids our pictures of 100% of their color */
     /* border-radius: 8px; */ /* Gives all images slightly rounded corners */
     /* max-width: 100%; */ /* Ensures all images stay within the width of their container */
     /* height: 340px; */ /* Sets the height of all images.  I removed this to try to get photos to fit. */
@@ -140,7 +150,7 @@ img {
 
 /* Image element hover effects */
 img:hover {
-	filter: grayscale(10%);  /* Brings back most of the image's color when hovered over */
+    filter: grayscale(30%) contrast(105%);  /* Brings back most of the image's color when hovered over */
     transition: transform 1s; /* Transition lasts 1 second */
 	transform: scale(1.1); /* Image is increased slightly when hovered over */
 }
@@ -164,7 +174,7 @@ footer {
 /***** NAVBAR STYLING *****/
 .Navbar {
     overflow: hidden; /* This ensures that any content that overflows beyond the boundary of our nav bar is not displayed */
-    background-color: black; /* This colors the navbar black */
+    background-color: white; /* This colors the navbar black */
     position: fixed; /* This keeps the navbar at the top of the screen as we scroll */
     top: 0; /* This ensures no space is displayed above the navbar */
     width: 100%; /* This makes the navbar span the entire width of the page */
@@ -183,7 +193,7 @@ footer {
 .Navbar a {
     float: left; /* This specifies that the text floats on the left on the navbar */
     display: block; /* This ensures that other text will be displayed on the same line or row, instead of a new line */
-    color: white; /* This is the font color for text on our navbar */
+    color: black; /* This is the font color for text on our navbar */
     padding: 14px 16px; /* This adds padding around our text */
     text-decoration: none; /* This gets rid of the underlines under the text on our navbar */
     font-family: "Poppins", "Montserrat", sans-serif; /* This specifies the font family for text on our navbar */
@@ -195,6 +205,7 @@ footer {
     -webkit-animation: moveNavText 1s; /* Animation for Safari 4.0 - 8.0 */
     animation: moveNavText 1s; /* Applies the moveNavText animation for 1s */ 
     letter-spacing: 4px;
+    background-color: white; /* Defines the background color */
 }
 
 /* moveNavText animation effect for moving the navbar text from above the view to the navbar */
@@ -213,8 +224,8 @@ footer {
 
 /* Navbar hover effects */
 .Navbar a:hover {
-    background-color: #f4f4f4; /* Defines the background color that will display when you hover over the link */
-    color: black; /* This defines the font color that will display when navbar a elements are hovered over */
+    background-color: black; /* Defines the background color that will display when you hover over the link */
+    color: #888eb2; /* This defines the font color that will display when navbar a elements are hovered over */
     font-weight: bold; /* This makes the text on the navbar bold when hovered over */
     transition: 0.5s ease-in; /* Creates a smooth transition for the hover trigger */
 }
@@ -235,13 +246,14 @@ footer {
     bottom: 0; /* This ensures no space between the bottom of the video and the bottom of the page */
     min-width: 100%; /* This ensures the video is displayed across the full width of the page */
     z-index: -1; /* This places the video behind the other elements on the page */
+    /* filter: grayscale(10%);  Brings back most of the video's color when hovered over */
+    filter: invert(0%) sepia(0%) saturate(50%) hue-rotate(43deg) brightness(93%) contrast(100%);
     /* filter: invert(100%); Tried inverted effect */
-    filter: grayscale(100%); /* Added grayscale effect */
 }
 
 /* Added video element hover effects */
 #Header_Video:hover {
-	filter: grayscale(10%);  /* Brings back most of the video's color when hovered over */
+    filter: grayscale(100%); /* Added grayscale effect */
     transition: transform 1s; /* Transition lasts 1 second */
 	transform: scale(1.1); /* Video is increased slightly when hovered over */
 }
@@ -273,10 +285,11 @@ footer {
 /***** END OF VIDEO STYLING *****/
 
 
+
 /***** Slideshow Styling *****/
-#Slideshow_Background {
-    background: rgba(255, 255, 255, 0.35); /* This creates a slightly transparent white background that's palced over the video in the background */    
-}
+/* #Slideshow_Background {
+    background: rgba(255, 255, 255, 0.1); / This creates a slightly transparent white background that's palced over the video in the background /    
+} */
 
 .mySlides{
     display: none; /* This prevents the images from being displayed, we will use JS to display these */
@@ -311,7 +324,7 @@ footer {
     top: 50%; /* This moves the buttons up in the slideshow container */
     width: auto; /* The width of the buttons is automatically adjusted based on the content */
     padding: 2vw; /* Adds padding equal to 2% of the viewport width */
-    color: darkgray; 
+    color: black; 
     font-weight: bold;
     font-size: 1.5vw;
     border-radius: 0 3px 3px 0; /* Adds a slightly rounded border on the top and bottom right corners */
@@ -327,8 +340,8 @@ footer {
 
 /* Hover effect on slide show buttons */
 .Previous:hover, .Next:hover {
-    background-color: rgba(0, 0, 0, 0.8); /* Makes the background of the arrows a transparent gray color */
-    color: white; /* Makes the arrows white when hovered over */
+    background-color: rgba(0, 0, 0, 1); /* Makes the background of the arrows black */
+    color: #888eb2; /* Makes the arrows white when hovered over */
 }
 
 /* Slideshow text */
@@ -340,10 +353,10 @@ footer {
     width: 100%; /* The element covers the full width of the image */
     text-align: center; /* The text is center aligned within the image */
     font-family: Avant Garde, Helvetica;
-    letter-spacing: .1vw; /* This gives slight spacing between the letters */
-    font-size: 1.5vw; /* Font size is relative to the size of the viewport width */
+    letter-spacing: .2vw; /* This gives slight spacing between the letters */
+    font-size: 1vw; /* Font size is relative to the size of the viewport width */
     background-color: rgba(0, 0, 0, 0.75); /* Gives a slightly transparent black background */
-    font-weight: bold;
+    /* font-weight: 500; */
     /* border-radius: 0px 0px 7px 7px; Gives the text background rounded corners on the bottom left and right corners */
 }
 
@@ -362,7 +375,7 @@ footer {
 
 /* Hover effect for slideshow dots */
 .active, .dot:hover {
-    background-color: black; /* Sets the color of the dots when active or hovered over */
+    background-color: #888eb2; /* Sets the color of the dots when active or hovered over */
 }
 
 /* Fading animation for slideshow */
@@ -397,7 +410,7 @@ footer {
     /* padding: 10px; */
     padding-top: 3%; /* This ensures there is space between the top of the column and our headings */
     height: 550px; /* Original column height was 400px - this may need to be adjusted depending on the text you enter */
-    background-color: #f2f2f2; /* Sets the background color of the columns with class Column_1 */
+    background-color: white; /* Sets the background color of the columns with class Column_1 */
     /* column-fill: auto; */
     overflow: hidden;
     background-size: cover;
@@ -417,7 +430,7 @@ footer {
     /* padding: 10px; */ /* Turned off padding */
     /* padding-top: 1.9%; */ /* Turned off top padding */
     height: 550px; /* Original column height was 400px */
-    background-color: rgba(77,77,77, 0.5);
+    /* background-color: rgba(77,77,77, 0.5); */
     /* background-color: #f2f2f2; */
     background-color: black;
     overflow: hidden;
@@ -572,9 +585,10 @@ footer {
 button {
     font-family: "Poppins", "Montserrat", sans-serif; /* This specifies the font family for text on our navbar */
     font-weight: 500;    
-    letter-spacing: .3vw; /* Adds slight spacing between the letters */
+    letter-spacing: 0.4vw; /* Adds slight spacing between the letters */
     font-size: 1.5vw; /* Relative sizing of text */
     /* font-weight: bold;  */
+    border-radius: 5px;
     padding: 1.5vw; /* Adds padding to the text in the button */
     cursor: pointer; /* Changes the cursor to pointer over button elements */
     width: 100%; /* Sets the width of the buttons to 100% of their containers */
@@ -583,7 +597,7 @@ button {
 
 /* Hover effect for contact and submit buttons */
 button:hover, .form-container .btn:hover {
-    color: white; /* This makes the text in the buttons white when hovered over */
+    color: #888eb2; /* This makes the text in the buttons white when hovered over */
     background-color: black; /* The background of the button changes to black when hovered over */
     transition-duration: 1s; /* This makes the transition last 1 second */
     -webkit-transition-duration: 1s; /* For Safari 4.0-8.0 */
@@ -604,24 +618,39 @@ button:hover, .form-container .btn:hover {
     background-color: white; 
     color: black;
     border: none;
-    /* border-color: white; */
+    /* border-color: black; */
     width: 10%;
-    text-align: center;
+    text-align: right;
     /* top: .5vw; Slightly up from the bottom of the viewport */
     /* right: .5vw; Slightly in from the right side of the viewport */
-    position: absolute; right: 0; top: 0;
+    position: absolute; right: 2px; top: 2px;
 }
 
 /* Styling for close button on hover */
 .form-container .cancel:hover {
-    color: white;
+    color: #888eb2;
     background-color: black;
+    border-color: grey;
     transition-duration: 1s;
     -webkit-transition-duration: 1s;
-    border-color: grey;
+}
+
+/* Changes input box outline on click to blavender from default pink */
+input[type=text]:focus-visible {
+    outline: gray auto 1px;
+    outline-color: #888eb2;
+    outline-style: auto;
+    outline-width: 1px;
 }
 /***** END OF NEW CONTACT FORM STYLING *****/
 
+
+/* Hides mobile class to reorder main blocks */
+@media screen and (min-width: 1200px) {
+    .Mobile {
+        display: none;
+    }
+}
 
 /***** MOBILE VIEW *****/
 
@@ -649,31 +678,89 @@ button:hover, .form-container .btn:hover {
         font-size: 2vw; /* Relative sizing of text */
     }
 
+    #Slideshow_Container {
+        width: 100vw; /* Relative sizing of the container for the slidewshow set to 100% of the viewport width */
+        height: auto; /* The height of the container is automatically adjusted based on the content it is displaying */
+        /* padding-top: 4%; Adds a small padding to the top of the slideshow container */
+        position: relative; /* This sets the container relative to its normal positioning */
+        margin:auto; /* This will horizontally center the container on the page */
+    }
+
+    /* Next and previous buttons */
+    .Previous, .Next {
+        /* top: 20%; */
+        width: 10vw; /* The width of the buttons is automatically adjusted based on the content */
+        padding: 2vw; /* Adds padding equal to 2% of the viewport width */
+        font-size: 5vw;
+        text-align: center;
+    }
+
+    /* Hides desktop class to reorder main blocks */
+    .Desktop {
+        display: none;
+    }
+    .text {
+        font-size: 3vw; /* Font size is relative to the size of the viewport width */
+    }
+
+    .About_Text {
+        padding-top: 10%;
+    }
+
+    /* Reduces empty space below text and adds padding above it */ 
+    .Github_Text {
+        margin-bottom: -200px;
+        padding-top: 10%;
+    }
+
 /* The following was an unsuccessful attempt to change the order of the columns in mobile view */
-    .column div:nth-child(1) {
+
+    /* .About_Pic {
+        grid-row: 0; / set this to appear first /
+
+    }
+
+    .About_Text {
+        grid-row: 1; / set this to appear second /
+    }
+
+    .Github_Text {
+
+        grid-row: 3; / set this to appear second /
+    }
+
+    .Github_Pic {
+        grid-row: 2; / set this to appear second /
+    } */
+
+
+/* The following was another unsuccessful attempt to change the order of the columns in mobile view */
+    /* .Column:nth-of-type(1) {
+        grid-row: 1;
+    }
+
+    .Column:nth-of-type(2) {
+        grid-row: 2;
+    }
+
+    .Column:nth-of-type(3) {
+        grid-row: 0;
+    }
+
+    .Column:nth-of-type(4) {
+        grid-row: 3;
+    } */
+
+    /* .Columns:nth-of-type(2) {
         order: 1;
     }
-
-    .column div:nth-child(2) {
+    .Columns:nth-of-type(1) {
         order: 2;
-    }
+        background: yellow;
+    } */
 
-    .column div:nth-child(3) {
-        order: 4;
-    }
 
-    .column div:nth-child(4) {
-        order: 3;
-    }
-
-    .column div:nth-child(5) {
-        order: 5;
-    }
-
-    .column div:nth-child(6) {
-        order: 6;
-    }
-  }
+}
 
   /***** END OF MOBILE VIEW *****/
 
